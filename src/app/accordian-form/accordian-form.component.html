@@ -1,0 +1,12 @@
+<h2>Add Section</h2>
+<form #accoForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="sectionHeader" class="h4">Section Header</label>
+        <input type="text" class="form-control" id="sectionHeader" placeholder="Enter section Heading" ngModel name="accoTitle">
+      </div>
+    <div class="form-group">
+        <label for="accoDesc" class="h4">Section Content</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ngModel name="accoDesc" placeholder="Enter Section Content"></textarea>
+    </div>
+    <Button class="btn btn-primary btn-block" type="submit">Add</Button>
+</form>
